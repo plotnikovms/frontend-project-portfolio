@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -404,6 +408,118 @@ body {
 
 
 
+.contacts-section {
+  margin: 75px auto;
+  max-width: 1024px;
+}
+
+.contacts-section__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-section__content_text-and-from {
+  max-width: 505px;
+}
+
+.contacts-section__content_text-and-from p {
+  min-width: 0;
+  max-height: 100%;
+}
+
+.contacts-section__content_contacts {
+  height: fit-content;
+  border: 1px solid #ABB2BF;
+  padding: 0 10px;
+}
+
+.contacts-section__content_contacts_text {
+  margin: 14px 0;
+  color: white;
+}
+
+.contacts-section__content_contacts_contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 14px 0;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+}
+
+.form_name-and-email {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form_name,
+.form_email,
+.form_title,
+.form_text,
+.form_submit {
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #ABB2BF;
+  padding: 5px;
+  padding-left: 10px;
+  background: transparent;
+  border: 1px solid #ABB2BF;
+  height: 37px;
+}
+
+.form_name,
+.form_email {
+  width: 50%;
+  min-width: 0;
+}
+
+.form_text {
+  padding-top: 10px;
+  height: 119px;
+  resize: none;
+}
+
+.form_submit {
+  width: 71px;
+  border: 1px solid #C778DD;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.form_submit:active {
+  transform: scale(0.98);
+}
+
+.form_name::placeholder,
+.form_email::placeholder,
+.form_title::placeholder,
+.form_text::placeholder {
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #ABB2BF;
+}
+
+.form_name:focus,
+.form_email:focus,
+.form_title:focus,
+.form_text:focus {
+  border: 1px solid white;
+}
+
+
+
+
+
 
 .footer {
   margin: 50px 0;
@@ -459,6 +575,10 @@ body {
   }
 
   .about-section__content_img {
+    display: none;
+  }
+
+  .contacts-section__content_contacts {
     display: none;
   }
 }
@@ -523,6 +643,18 @@ body {
     font-size: 14px;
   }
 
+  .start-section,
+  .projects-section,
+  .skills-section,
+  .about-section,
+  .contacts-section {
+    margin: 50px auto;
+  }
+
+  .section__head {
+    margin-bottom: 25px;
+  }
+
   .start-section__text-block_main-text {
     font-size: 24px;
   }
@@ -537,5 +669,47 @@ body {
 
   .projects-section__projects__project_description_status-blocks {
     gap: 7px;
+  }
+
+  .form {
+    gap: 15px;
+  }
+
+  .form_name::placeholder,
+  .form_email::placeholder,
+  .form_title::placeholder,
+  .form_text::placeholder {
+    font-size: 14px;
+  }
+
+  .form_name,
+  .form_email,
+  .form_title,
+  .form_text,
+  .form_submit {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .form_name-and-email {
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 0;
+  }
+
+  .form_name,
+  .form_email {
+    width: 100%;
+  }
+
+  .form_text {
+    height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 290px) {
+  .form {
+    width: 200px;
   }
 }
