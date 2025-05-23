@@ -26,20 +26,29 @@ function openCard(card) {
   overlay.prepend(leftSwapButton);
   overlay.append(rightSwapButton);
 
-  if (!card.previousElementSibling) leftSwapButton.style.display = "none";
-  if (!card.nextElementSibling) rightSwapButton.style.display = "none";
-
   leftSwapButton.addEventListener('click', function () {
-    let prevCard = card.previousElementSibling;
+    let prevCard;
+    if (card.previousElementSibling) {
+      prevCard = card.previousElementSibling;
+    } else {
+      prevCard = document.querySelector('.right-project');
+    }
     closeCard(overlay);
     openCard(prevCard);
   });
 
   rightSwapButton.addEventListener('click', function () {
-    let nextCard = card.nextElementSibling;
+    let nextCard;
+    if (card.nextElementSibling) {
+      nextCard = card.nextElementSibling;
+    } else {
+      nextCard = document.querySelector('.left-project')
+    }
     closeCard(overlay);
     openCard(nextCard);
   });
+
+
 
 
 
