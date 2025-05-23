@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282C33;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #ABB2BF;
+}

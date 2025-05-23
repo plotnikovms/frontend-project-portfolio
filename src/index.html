@@ -50,7 +50,7 @@
       <div class="start-section__text-block">
         <h1 class="start-section__text-block_main-text">Elias is a <b>web designer</b> and <b>front-end developer</b></h1>
         <p class="start-section__text-block_description">He crafts responsive websites where technologies meet creativity</p>
-        <div class="start-section__text-block_contact-me">Contact me!!</div>
+        <div class="button contact-me">Contact me!!</div>
       </div>
       <div class="start-section__img-block">
         <img src="../img/photo.svg" class="start-section__img-block_photo">
@@ -171,7 +171,7 @@
           <p>Hello, i’m Elias!</p>
           <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</p> 
           <p>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
-          <div class="start-section__text-block_contact-me">Read more -></div>
+          <div class="button">Read more -></div>
         </div>
 
         <div class="about-section__content_img">
@@ -191,15 +191,19 @@
       <div class="contacts-section__content">
         <div class="contacts-section__content_text-and-from">
           <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</p> 
-          <form class="form">
-            <div class="form_name-and-email">
-              <input type="text" class="form_name" placeholder="Name" required>
-              <input type="email" class="form_email" placeholder="Email" required>
-            </div>
-            <input type="text" class="form_title" placeholder="Title" required>
-            <textarea class="form_text" placeholder="Message" required></textarea>
-            <input type="submit" class="form_submit" value="Send">
-          </form>
+          <div class="button contact-me">Contact me!!</div>
+
+          <template id="form">
+            <form class="form">
+              <div class="form_name-and-email">
+                <input type="text" class="form_name" placeholder="Name" required>
+                <input type="email" class="form_email" placeholder="Email" required>
+              </div>
+              <input type="text" class="form_title" placeholder="Title" required>
+              <textarea class="form_text" placeholder="Message" required></textarea>
+              <input type="submit" class="button form_submit" value="Send">
+            </form>
+          </template>
         </div>
 
         <div class="contacts-section__content_contacts">
@@ -228,6 +232,9 @@
 
           <p>elias@elias-dev.ml</p>
           <p>Web designer and front-end developer</p>
+          <br>
+          <p>Time before first exam:</p>
+          <div class="footer__countdown"></div>
         </div>
 
         <div class="footer__content_media">
@@ -244,5 +251,9 @@
         </div>
       </div>
     </footer>
+
+  <script src="projects.js"></script>
+  <script src="form.js"></script>
+  <script src="timer.js"></script>
   </body>
 </html>

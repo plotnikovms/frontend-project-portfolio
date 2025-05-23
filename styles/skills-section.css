@@ -1,0 +1,45 @@
+.skills-section {
+  margin: 75px auto;
+  max-width: 1024px;
+}
+
+.skills-section__blocks {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.skills-section__blocks > :nth-child(1) {
+  order: 3;
+}
+
+.skills-section__blocks > :nth-child(2) {
+  order: 2;
+}
+
+.skills-section__blocks > :nth-child(3) {
+  order: 1;
+}
+
+.skills-section__blocks__column {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  margin-left: 20px;
+}
+
+.skills-section__blocks__column_block {
+  border: 1px solid #ABB2BF;
+  margin-bottom: 20px;
+}
+
+.skills-section__blocks__column_block_name {
+  border-bottom: 1px solid #ABB2BF;
+  padding: 5px;
+  color: white;
+}
+
+.skills-section__blocks__column_block_technologies {
+  padding: 5px;
+  line-height: 2;
+}

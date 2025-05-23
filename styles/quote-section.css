@@ -1,0 +1,44 @@
+.quote-section {
+  font-size: 24px;
+  color: white;
+  max-width: 712px;
+  margin: 50px auto;
+}
+
+.quote-section__text {
+  border: 2px solid #ABB2BF;
+  text-align: center;
+  align-content: center;
+  height: 95px;
+  position: relative;
+}
+
+.quote-section__text::before {
+  position: absolute;
+  content: '"';
+  top: -30px;
+  left: -1px;
+  font-size: 70px;
+}
+
+.quote-section__text::after {
+  position: absolute;
+  content: '"';
+  bottom: -65px;
+  right: 15px;
+  font-size: 70px;
+}
+
+.quote-section__author {
+  border: 2px solid #ABB2BF;
+  border-top: 0;
+  width: 162px;
+  height: 63px;
+  justify-self: end;
+  text-align: center;
+  align-content: center;
+}
+
+.quote-section__author::before {
+  content: "- ";
+}

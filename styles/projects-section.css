@@ -1,0 +1,114 @@
+.projects-section {
+  margin: 75px auto;
+  max-width: 1024px;
+}
+
+.projects-section__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.projects-section__projects__project {
+  border: 1px solid #ABB2BF;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 10px;
+  transition: all 0.5s linear;
+}
+
+.projects-section__projects__project_technologies {
+  min-height: 37px;
+  border-bottom: 1px solid #ABB2BF;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  line-height: 2;
+}
+
+.projects-section__projects__project_description {
+  padding-left: 10px;
+}
+
+.projects-section__projects__project_description_name {
+  color: white;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.projects-section__projects__project_description_status-blocks {
+  display: flex;
+  gap: 15px;
+}
+
+.projects-section__projects__project_description_live {
+  border: 1px solid #C778DD;
+  display: inline-block;
+  align-items: center;
+  padding: 5px 10px;
+  color: white;
+}
+
+.projects-section__projects__project_description_cached {
+  border: 1px solid #ABB2BF;
+  display: inline-block;
+  align-items: center;
+  padding: 5px 10px;
+  color: #ABB2BF;
+}
+
+.projects-section__projects__project_description_live::after {
+  content: "  <->";
+}
+
+.projects-section__projects__project_description_cached::after {
+  content: "  >=";
+}
+
+
+
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  backdrop-filter: blur(10px);
+  gap: 10px;
+}
+
+.opened-card {
+  max-width: 50%;
+  animation: opening 0.5s ease forwards;
+  z-index: 1000;
+}
+
+.left-swap-button,
+.right-swap-button {
+  border: 2px solid white;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.left-swap-button {
+  border-width: 0 0 2px 2px;
+}
+
+.right-swap-button {
+  border-width: 2px 2px 0 0;
+}
+
+.left-swap-button:hover,
+.right-swap-button:hover {
+  transform: scale(1.2) rotate(45deg);
+  opacity: 1;
+}

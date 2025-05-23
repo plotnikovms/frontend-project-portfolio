@@ -1,0 +1,25 @@
+.hashtag-text::before {
+  content: "#";
+  color: #C778DD;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.media-links {
+  width: 32px;
+  height: 311px;
+  position: fixed;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.media-links__line {
+  width: 1px;
+  height: 191px;
+  background-color: #ABB2BF;
+}

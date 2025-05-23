@@ -1,0 +1,112 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  max-width: 50%;
+}
+
+.form_name-and-email {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form_name,
+.form_email,
+.form_title,
+.form_text,
+.form_submit {
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #ABB2BF;
+  padding: 5px;
+  padding-left: 10px;
+  background: transparent;
+  border: 1px solid #ABB2BF;
+  height: 37px;
+}
+
+.form_name,
+.form_email {
+  width: 50%;
+  min-width: 0;
+}
+
+.form_text {
+  padding-top: 10px;
+  height: 119px;
+  resize: none;
+}
+
+.button {
+  width: fit-content;
+  border: 2px solid #C778DD;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.form_name::placeholder,
+.form_email::placeholder,
+.form_title::placeholder,
+.form_text::placeholder {
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #ABB2BF;
+}
+
+.form_name:focus,
+.form_email:focus,
+.form_title:focus,
+.form_text:focus {
+  border: 1px solid white;
+}
+
+
+
+
+
+.footer {
+  margin: 50px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.footer__content_info {
+  margin: 10px;
+}
+
+.footer__content_media_text {
+  color: white;
+  margin: 10px 0;
+}
+
+.footer__content_media_img {
+  margin-left: 5px;
+}
+
+
+
+
+
+@keyframes opening {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

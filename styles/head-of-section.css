@@ -1,0 +1,23 @@
+.section__head {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.section__head_title {
+  font-size: 42px;
+}
+
+.section__head_line {
+  width: 500px;
+  height: 1px;
+  border: none;
+  background-color: #C778DD;
+  margin: 20px;
+}
+
+.section__head_view-all {
+  margin-left: auto;
+  cursor: pointer;
+}
