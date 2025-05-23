@@ -32,16 +32,6 @@
   margin: 30px 0;
 }
 
-.start-section__text-block_contact-me {
-  border: 2px solid #C778DD;
-  width: 148px;
-  height: 37px;
-  font-size: 16px;
-  text-align: center;
-  align-content: center;
-  color: white;
-}
-
 .start-section__img-block {
   flex: 1;
   display: flex;
