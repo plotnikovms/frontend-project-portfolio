@@ -1,6 +1,6 @@
 const key = 'key';
 const showDelay = 10000;
-const storageTime = 30000;
+const storageTime = 1000 * 60 * 60 * 24 * 2;
 
 function shouldShowPopup() {
   const lastShown = localStorage.getItem(key);
