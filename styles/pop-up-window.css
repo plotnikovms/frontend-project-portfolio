@@ -1,0 +1,9 @@
+.pop-up-window {
+  background-color: #faebd7;
+  width: 50%;
+  height: 30%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
